@@ -1,4 +1,7 @@
-export const metadata = {
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
   title: "Resolve IT - Sistem Helpdesk Ticketing",
   description:
     "Resolve IT adalah sistem helpdesk ticketing untuk mengelola laporan kendala, permintaan layanan, SLA, teknisi, dan laporan performa IT.",
@@ -33,3 +36,15 @@ export const metadata = {
       "Sistem helpdesk ticketing untuk layanan IT yang lebih cepat, rapi, dan terukur.",
   },
 };
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="id">
+      <body>{children}</body>
+    </html>
+  );
+}
