@@ -28,7 +28,17 @@ export const metadata: Metadata = {
     siteName: "Resolve IT",
     locale: "id_ID",
     type: "website",
+
+    // 🔥 INI YANG KAMU TAMBAH
+    images: [
+      {
+        url: "https://resolve.tsany.web.id/og-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Resolve IT - Sistem Helpdesk Ticketing",
